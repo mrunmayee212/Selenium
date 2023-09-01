@@ -32,7 +32,8 @@ public class Example_006_Validation {
 	}
 
 	public static void launchBrowser() {
-
+		System.setProperty("webdriver.chrome.driver", "E:\\driver\\chromedriver.exe");
+		
 		browser = new ChromeDriver();
 
 		browser.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
