@@ -13,6 +13,13 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.11.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>htmlunit-driver</artifactId>
+    <version>4.11.0</version>
+</dependency>
+
 
 	</dependencies>
 	<build>
