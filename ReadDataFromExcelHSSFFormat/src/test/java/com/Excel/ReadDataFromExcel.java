@@ -12,10 +12,6 @@ public class ReadDataFromExcel {
 	FileInputStream fs;
 
 	public void readExcel() throws Exception {
-
-		String path = "E:\\mrunumi\\ReadData.xls";
-		fs = new FileInputStream(path);
-
 		HSSFWorkbook wb = new HSSFWorkbook(fs);
 		// which sheet I need to refer
 
@@ -30,7 +26,7 @@ public class ReadDataFromExcel {
 			// Giving me Single Row
 			int totalColumns = singleRowElement.getLastCellNum();
 
-			//System.out.println("Count of all columns : " + totalColumns);
+			// System.out.println("Count of all columns : " + totalColumns);
 			for (int j = 0; j < totalColumns; j++) {
 				// To Return Single column
 
@@ -47,7 +43,7 @@ public class ReadDataFromExcel {
 			System.out.println(" ");
 
 		}
-
+		wb.close();
 	}
 
 }
