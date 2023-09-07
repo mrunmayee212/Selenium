@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v114.browser.model.WindowState;
 
 public class Example_018_Window_Tab {
 
@@ -28,9 +29,9 @@ public class Example_018_Window_Tab {
 		
 		driver.manage().window().maximize();
 		
-		driver.findElement(By.linkText("Gmail"));
 		
-		driver.switchTo().newWindow(WindowType.TAB);
+		
+		driver.switchTo().newWindow(WindowType.TAB);// This will open window in next Tab
 		
 		driver.get("https://www.facebook.com");
 

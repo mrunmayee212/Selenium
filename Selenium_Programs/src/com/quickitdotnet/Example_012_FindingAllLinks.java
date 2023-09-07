@@ -42,6 +42,7 @@ public class Example_012_FindingAllLinks {
 	public static void lauchbrowser() {
 		driver = new ChromeDriver();
 		driver.get("https://www.practo.com/");
+	
 		driver.manage().window().maximize();
 
 	}

@@ -19,7 +19,7 @@ public class Example_017_HeadlessBrowser {
 
 	public static void lauchbrowser() {
 	HtmlUnitDriver unitDriver = new HtmlUnitDriver();
-	 unitDriver.get("https://google.com/");
+	 unitDriver.get("https://facebook.com/");
 		
 		//Print the title of the page
 	        System.out.println("Title of the page is -> " + unitDriver.getTitle());
